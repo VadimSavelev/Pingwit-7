@@ -3,6 +3,8 @@ package pl.pingvit.homework2;
 public class Task2 {
     public static void main(String[] args) {
         String myByteString = "77";
+        // опечатка: myParsedByte, без буквы n. это касается и остальных переменных
+        // переименуй из через refactor -> rename
         Byte myParsendByte = Byte.parseByte(myByteString);
         String myShortString = "12587";
         Short myParsendShort = Short.parseShort(myShortString);
