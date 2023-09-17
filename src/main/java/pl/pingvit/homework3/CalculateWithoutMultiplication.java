@@ -12,7 +12,6 @@ public class CalculateWithoutMultiplication {
         int result = 0;
         for (int i = 1; i <= a; i++) {
             result += b;
-// эта пустая строка не нужна, удали плиз
         }
         System.out.println("Product of value A and B = " + result);
     }
