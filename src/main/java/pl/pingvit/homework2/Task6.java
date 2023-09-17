@@ -7,6 +7,6 @@ public class Task6 {
         // в этом задании все задумывалось проще:
         //System.out.println("Сумма двух строк = " + myStringValue1 + myStringValue2);
 
-        System.out.println("Сумма двух строк = " + myStringValue1+myStringValue2);
+        System.out.println("Сумма двух строк = " + myStringValue1 + myStringValue2);
     }
 }

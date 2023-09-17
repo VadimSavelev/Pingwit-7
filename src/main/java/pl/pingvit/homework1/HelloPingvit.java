@@ -3,6 +3,6 @@ package pl.pingvit.homework1;
 
 public class HelloPingvit {
     public static void main(String[] args) {
-        System.out.println("Hello Pingvit, "+args[0]);
+        System.out.println("Hello Pingvit, " + args[0]);
     }
 }
