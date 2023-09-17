@@ -11,7 +11,7 @@ public class CalculatorDistance {
         for (int numberOfTrainingDays = 1; numberOfTrainingDays <= 7; numberOfTrainingDays++) {
             distanceOnTheNextDay += (distanceOnTheNextDay * PERCENT_AGE_INCREASE_IN_DAILY_VALUE) / 100;
             summaryDistance += distanceOnTheNextDay;
-
+// эта пустая строка не нужна, удали плиз
         }
         System.out.println(summaryDistance);
     }

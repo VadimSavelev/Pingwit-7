@@ -5,7 +5,7 @@ public class SumOfOddNumbers {
         int sum = 0;
         for (int i = 1; i <= 99; i += 2) {
             sum += i;
-
+// эта пустая строка не нужна, удали плиз
         }
         System.out.println("Sum of odd numbers = " + sum);
     }

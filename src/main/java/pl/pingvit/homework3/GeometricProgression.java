@@ -1,7 +1,7 @@
 package pl.pingvit.homework3;
 
 public class GeometricProgression {
-
+// эта пустая строка не нужна, удали плиз
 
     public static void main(String[] args) {
         int summaGeometricProgression = 0;
