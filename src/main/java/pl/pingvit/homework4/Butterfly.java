@@ -2,6 +2,7 @@ package pl.pingvit.homework4;
 
 import java.util.Scanner;
 
+// очень хорошо, осталось починить случай, когда размер = 9
 public class Butterfly {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

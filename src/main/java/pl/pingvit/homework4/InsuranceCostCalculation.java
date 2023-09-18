@@ -32,11 +32,11 @@ public class InsuranceCostCalculation {
         System.out.println("Please enter have you had any accidents?: ");
         boolean hadAccidents = scanner.nextBoolean();
         double volumePerTariff = engineCapacity * TARIFF_PER_CUBIC_CENTIMETER;
-        clientStatus(regularCustomer);
-        accidentCheck(hadAccidents);
+        clientStatus(regularCustomer);  // результат этого вызова нигде не используется, можно удалить
+        accidentCheck(hadAccidents);  // результат этого вызова нигде не используется, можно удалить
 
-        double client;
-        client = volumePerTariff *clientStatus(regularCustomer) * accidentCheck(hadAccidents);
+        double client; // нужно объединить строки 38 и 39 - объявление и присвоение переменной, тк сейчас не имеет смыла делить на две
+        client = volumePerTariff *clientStatus(regularCustomer) * accidentCheck(hadAccidents); // я бы предложил другое имя для переменной, что-то связанное с итоговой стоимостью
         System.out.println("your policy is worth " + client + " euro");
     }
 
@@ -54,12 +54,14 @@ public class InsuranceCostCalculation {
        double customerRatio;
         if (regularCustomer) {
             customerRatio = REGULAR_CUSTOMER_RATIO_IF_TRUE;
-
+// лишняя пуста строка
         } else {
             customerRatio = CUSTOMER_RATIO_IF_FALSE;
-
+// лишняя пуста строка
         }
         return customerRatio;
-
+// лишняя пуста строка
     }
-}
+}//  В целом все хорошо и решение рабочее. Я хотел бы, чтобы ты сделал второй вариант решения, где использовал бы
+// не double, а BigDecimal Вычисления, касающиеся денег,
+// в реальном коде не проводят через double - давай плиз попрактикуемся
