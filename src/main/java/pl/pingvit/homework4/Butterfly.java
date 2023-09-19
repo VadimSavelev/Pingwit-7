@@ -2,7 +2,6 @@ package pl.pingvit.homework4;
 
 import java.util.Scanner;
 
-// очень хорошо, осталось починить случай, когда размер = 9
 public class Butterfly {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -18,12 +17,12 @@ public class Butterfly {
                 System.out.print(" ");
             }
             //лево верх
-            for (int j = i; j >=0 ; j--) {
+            for (int j = i; j >= 0; j--) {
                 System.out.print(j + 1);
             }
             System.out.println();
         }
-        for (int i = size; i >= 0; i--) {
+        for (int i = size - 1; i >= 0; i--) {
             //низ право
             for (int j = 0; j <= i; j++) {
                 System.out.print(j + 1);
@@ -33,11 +32,10 @@ public class Butterfly {
                 System.out.print(" ");
             }
             //низ лево2
-            for (int j = i; j >=0 ; j--) {
+            for (int j = i; j >= 0; j--) {
                 System.out.print(j + 1);
             }
             System.out.println();
         }
     }
 }
-
