@@ -28,7 +28,7 @@ public class CurrencyConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter name of your currency  : ");
-        String CurrencyClient = scanner.next();
+        String CurrencyClient = scanner.next(); // переменную надо переименовать с маленькой буквы
         System.out.println("Please enter your amount of money: ");
         BigDecimal amount = BigDecimal.valueOf(scanner.nextDouble());
         switch (CurrencyClient) {

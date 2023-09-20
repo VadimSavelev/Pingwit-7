@@ -32,7 +32,7 @@ public class InsuranceCostCalculation {
         boolean regularCustomer = scanner.nextBoolean();
         System.out.println("Please enter have you had any accidents?: ");
         boolean hadAccidents = scanner.nextBoolean();
-        BigDecimal volumePerTariff = engineCapacity.multiply(TARIFF_PER_CUBIC_CENTIMETER);
+        BigDecimal volumePerTariff = engineCapacity.multiply(TARIFF_PER_CUBIC_CENTIMETER); // эту переменную вводить было необязательно. исправлять не нужно, просто на будущее
         BigDecimal totalCost = volumePerTariff.multiply(clientStatus(regularCustomer)).multiply(accidentCheck(hadAccidents));
         System.out.println("your policy is worth " + totalCost + " euro");
     }
