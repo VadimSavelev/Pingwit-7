@@ -24,8 +24,5 @@ public class Road {
         long finish = System.currentTimeMillis();
         long elapsed = finish - start;
         System.out.println("program execution time " + elapsed + " ms");
-        // hello
-        // hello
     }
 }
-/*ываываываыва*/
