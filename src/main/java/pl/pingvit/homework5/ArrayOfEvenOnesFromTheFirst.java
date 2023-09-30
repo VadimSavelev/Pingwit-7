@@ -14,7 +14,7 @@ public class ArrayOfEvenOnesFromTheFirst {
         int index = 0;
         for (int i = 0; i < mas.length; i++) {
             if (mas[i] % 2 == 0) {
-                mas2[index]=mas[i];
+                mas2[index] = mas[i];
                 index++;
             }
         }
