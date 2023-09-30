@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class SumOfLargestAndSmallest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int myArray[] = new int[3]; // здесь ты использовал C-стиль обьявления массива. используй плиз джава-стиль int[] myArray = ....
+        int[] myArray = new int[3];
         for (int i = 0; i < myArray.length; i++) {
             System.out.println("Enter " + (i + 1) + " array elements: ");
             myArray[i] = scanner.nextInt();

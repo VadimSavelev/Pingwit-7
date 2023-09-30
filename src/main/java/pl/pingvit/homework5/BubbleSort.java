@@ -3,7 +3,6 @@ import java.util.Arrays;
 //Есть целочисленный неотсортированный массив. Отсортируйте его "пузырьком".
 //        Попробуйте сами написать и затем посмотрите реализацию
 public class BubbleSort {
-    // нужно сделать форматирование кода
     public static void main(String[] args) {
         int[] mas = {1, 2, 4, 6, 7, 4, 3, 2, 1, 6, 7};
         boolean isSorted = false;

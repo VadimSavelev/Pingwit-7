@@ -7,7 +7,7 @@ public class ReplacingOddOnes {
         for (int i = 0; i < mas.length; i++) {
             {
                 if (mas[i] % 2 != 0) {
-                    mas[i] = 0; // все норм понял
+                    mas[i] = 0;
                 }
             }
         }
