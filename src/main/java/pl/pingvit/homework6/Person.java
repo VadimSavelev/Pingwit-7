@@ -2,14 +2,14 @@ package pl.pingvit.homework6;
 public class Person {
     private String name;
     private String surname;
-    private String Number;  // плиз названия полей начинай с маленькой буквы
+    private String number;
     private String email;
     public Person() {
     }
     public Person(String name, String surname, String number, String email) {
         this.name = name;
         this.surname = surname;
-        Number = number;
+        this.number = number;
         this.email = email;
     }
     public String getName() {
@@ -25,10 +25,10 @@ public class Person {
         this.surname = surname;
     }
     public String getNumber() {
-        return Number;
+        return number;
     }
     public void setNumber(String number) {
-        Number = number;
+        this.number = number;
     }
     public String getEmail() {
         return email;
@@ -41,7 +41,7 @@ public class Person {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", Number='" + Number + '\'' +
+                ", number='" + number + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
