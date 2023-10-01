@@ -2,7 +2,7 @@ package pl.pingvit.homework6;
 public class Person {
     private String name;
     private String surname;
-    private String Number;
+    private String Number;  // плиз названия полей начинай с маленькой буквы
     private String email;
     public Person() {
     }
