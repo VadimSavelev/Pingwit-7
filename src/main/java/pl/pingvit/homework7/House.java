@@ -2,12 +2,11 @@ package pl.pingvit.homework7;
 public class House {
     private static final String HOUSE_TYPE_INDIVIDUAL = "Индивидуальный";
     private static final String HOUSE_TYPE_APARTMENT = "Многоэтажка";
-
     private String type;
     private int numberOfFloors;
     private int numberOfResidents;
     private boolean isTheHeatingOn;
-
+    static int sumOfResidentsOfHighRiseBuildings = 0;
     public House() {
     }
     public House(String type, int numberOfFloors, int numberOfResidents, boolean isTheHeatingOn) {
@@ -43,6 +42,14 @@ public class House {
     }
     public void setTheHeatingOn(boolean theHeatingOn) {
         isTheHeatingOn = theHeatingOn;
+    }
+    public static int countingResidentsOfMultiStoreyBuildings(House[] houses) {
+        for (House house : houses) {
+            if (HOUSE_TYPE_APARTMENT.equals(house.getType())) {
+                sumOfResidentsOfHighRiseBuildings += house.getNumberOfResidents();
+
+            }
+        }return sumOfResidentsOfHighRiseBuildings;
     }
     @Override
     public String toString() {
