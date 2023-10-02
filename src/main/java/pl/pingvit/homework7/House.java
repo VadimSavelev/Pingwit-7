@@ -1,4 +1,5 @@
 package pl.pingvit.homework7;
+import java.util.Arrays;
 public class House {
     private static final String HOUSE_TYPE_INDIVIDUAL = "Индивидуальный";
     private static final String HOUSE_TYPE_APARTMENT = "Многоэтажка";
@@ -47,9 +48,30 @@ public class House {
         for (House house : houses) {
             if (HOUSE_TYPE_APARTMENT.equals(house.getType())) {
                 sumOfResidentsOfHighRiseBuildings += house.getNumberOfResidents();
-
             }
-        }return sumOfResidentsOfHighRiseBuildings;
+        }
+        return sumOfResidentsOfHighRiseBuildings;
+    }
+    public static void printInformationAboutIndividualHouses(House[] houses) {
+        System.out.println("individual houses :");
+        for (House house : houses) {
+
+            if (HOUSE_TYPE_INDIVIDUAL.equals(house.getType())) {
+                System.out.println(house.toString());
+            }
+        }
+    }
+    public static void turnOnTheHeating(House[] houses) {
+
+        for (House house : houses) {
+
+            if (house.getNumberOfFloors()>5) {
+                if (!house.isTheHeatingOn()){
+                   house.setTheHeatingOn(true);
+                    System.out.println("включили отопление в домах : "+house.toString());
+                }
+            }
+        }
     }
     @Override
     public String toString() {

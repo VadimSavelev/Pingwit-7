@@ -11,5 +11,9 @@ public class HouseMain {
 
         int totalResidentsInMultiStoryHouses = House.countingResidentsOfMultiStoreyBuildings(houses);
         System.out.println("Общее количество жителей в многоэтажных домах: " + totalResidentsInMultiStoryHouses);
+
+        House.printInformationAboutIndividualHouses(houses);
+
+        House.turnOnTheHeating(houses);
     }
 }
