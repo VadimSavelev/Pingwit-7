@@ -1,4 +1,5 @@
 package pl.pingvit.homework6;
+
 public class Parking {
     public static void main(String[] args) {
         Person person1 = new Person("Vadim", "Savelev", "442223344", "savelev@gmail.com");

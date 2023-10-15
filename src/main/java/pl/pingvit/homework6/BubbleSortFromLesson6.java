@@ -1,9 +1,11 @@
 package pl.pingvit.homework6;
+
 public class BubbleSortFromLesson6 {
     public static void main(String[] args) {
         int[] unsorted = {7, 5, 6, 8, -1, -9, -5, -6, -4, 43, 45, 78, 65, 11, 122};
         int[] sorted = bubbleSort(unsorted);
     }
+
     private static int[] bubbleSort(int[] array) {
         int operationCounter = 0;
         int size = array.length;

@@ -1,4 +1,5 @@
 package pl.pingvit.homework7;
+
 public class StudentWithStaticFieldMain {
     public static void main(String[] args) {
         Student student6 = new Student("Vadim", 32, Student.getText());

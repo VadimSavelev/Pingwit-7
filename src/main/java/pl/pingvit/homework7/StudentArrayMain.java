@@ -1,5 +1,7 @@
 package pl.pingvit.homework7;
+
 import org.w3c.dom.Text;
+
 public class StudentArrayMain {
     public static void main(String[] args) {
         Student student1 = new Student("Vadim", 32);

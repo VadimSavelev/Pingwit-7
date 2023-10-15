@@ -1,5 +1,7 @@
 package pl.pingvit.homework7;
+
 import java.lang.reflect.Type;
+
 public class HouseMain {
     public static void main(String[] args) {
         House[] houses = new House[5];
