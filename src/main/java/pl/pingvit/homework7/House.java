@@ -5,7 +5,10 @@ import java.util.Arrays;
 public class House {
     private static final String HOUSE_TYPE_INDIVIDUAL = "Индивидуальный";
     private static final String HOUSE_TYPE_APARTMENT = "Многоэтажка";
-    private String type;
+
+    //private String type;
+
+    private HouseType type;
     private int numberOfFloors;
     private int numberOfResidents;
     private boolean isTheHeatingOn;
@@ -14,22 +17,25 @@ public class House {
     public House() {
     }
 
-    public House(String type, int numberOfFloors, int numberOfResidents, boolean isTheHeatingOn) {
+    public House(HouseType type, int numberOfFloors, int numberOfResidents, boolean isTheHeatingOn) {
+        /*
+        если использовать enum -  такая проверка становится не нужна
         if (type.equalsIgnoreCase(HOUSE_TYPE_INDIVIDUAL) || type.equalsIgnoreCase(HOUSE_TYPE_APARTMENT)) {
             this.type = type;
         } else {
             throw new IllegalArgumentException("Недопустимый тип дома");
-        }
+        }*/
+        this.type = type;
         this.numberOfFloors = numberOfFloors;
         this.numberOfResidents = numberOfResidents;
         this.isTheHeatingOn = isTheHeatingOn;
     }
 
-    public String getType() {
+    public HouseType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(HouseType type) {
         this.type = type;
     }
 
@@ -61,7 +67,8 @@ public class House {
         // плиз, создай отдельный класс, к примеру HouseStatisticsService, и вынеси в него этот метод.
         // + сделай плиз этот метод нестатическим. пока что делаем все методы нестатическими
         for (House house : houses) {
-            if (HOUSE_TYPE_APARTMENT.equals(house.getType())) {
+            //if (HOUSE_TYPE_APARTMENT.equals(house.getType())) {
+            if (HouseType.APARTMENT.equals(house.getType())) {
                 sumOfResidentsOfHighRiseBuildings += house.getNumberOfResidents();
             }
         }
@@ -74,7 +81,8 @@ public class House {
         System.out.println("individual houses :");
         for (House house : houses) {
 
-            if (HOUSE_TYPE_INDIVIDUAL.equals(house.getType())) {
+            //if (HOUSE_TYPE_INDIVIDUAL.equals(house.getType())) {
+            if (HouseType.INDIVIDUAL.equals(house.getType())) {
                 System.out.println(house.toString());
             }
         }
