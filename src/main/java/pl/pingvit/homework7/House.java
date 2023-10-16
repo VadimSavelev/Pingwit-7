@@ -58,6 +58,8 @@ public class House {
     }
 
     public static int countingResidentsOfMultiStoreyBuildings(House[] houses) {
+        // плиз, создай отдельный класс, к примеру HouseStatisticsService, и вынеси в него этот метод.
+        // + сделай плиз этот метод нестатическим. пока что делаем все методы нестатическими
         for (House house : houses) {
             if (HOUSE_TYPE_APARTMENT.equals(house.getType())) {
                 sumOfResidentsOfHighRiseBuildings += house.getNumberOfResidents();
@@ -67,6 +69,8 @@ public class House {
     }
 
     public static void printInformationAboutIndividualHouses(House[] houses) {
+        // плиз, создай отдельный класс, к примеру HouseStatisticsService, и вынеси в него этот метод.
+        // + сделай плиз этот метод нестатическим. пока что делаем все методы нестатическими
         System.out.println("individual houses :");
         for (House house : houses) {
 
@@ -77,7 +81,8 @@ public class House {
     }
 
     public static void turnOnTheHeating(House[] houses) {
-
+        // плиз, создай отдельный класс, к примеру HouseStatisticsService, и вынеси в него этот метод.
+        // + сделай плиз этот метод нестатическим. пока что делаем все методы нестатическими
         for (House house : houses) {
 
             if (house.getNumberOfFloors() > 5) {

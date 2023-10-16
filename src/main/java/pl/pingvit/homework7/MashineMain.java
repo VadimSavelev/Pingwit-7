@@ -1,7 +1,5 @@
 package pl.pingvit.homework7;
 
-import static pl.pingvit.homework7.Mashine.FIRST_DOOR;
-
 public class MashineMain {
     public static void main(String[] args) {
         Mashine mashine1 = new Mashine("Audi", "a6", 4);

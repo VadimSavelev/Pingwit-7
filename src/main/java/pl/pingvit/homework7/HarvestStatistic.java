@@ -3,8 +3,8 @@ package pl.pingvit.homework7;
 import java.math.BigDecimal;
 
 public class HarvestStatistic {
-    public static String plant;
-    public static BigDecimal totalWeight;
+    public static String plant;  // модификатор static здесь не нужен
+    public static BigDecimal totalWeight;  // модификатор static здесь не нужен
 
     public HarvestStatistic(String plant, BigDecimal totalWeight) {
         this.plant = plant;

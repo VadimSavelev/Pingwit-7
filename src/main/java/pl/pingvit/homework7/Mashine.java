@@ -1,8 +1,8 @@
 package pl.pingvit.homework7;
 
-public class Mashine {
+public class Mashine {  //
     static final int FIRST_DOOR = 1;
-    private String make;
+    private String make;  // make - это глагол, он не очень подходит для имени поля. варианты - maker, producer, brand
     private String model;
     private int numberOfDoors;
 
