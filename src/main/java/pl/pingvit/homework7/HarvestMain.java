@@ -3,8 +3,6 @@ package pl.pingvit.homework7;
 import java.math.BigDecimal;
 import java.util.Arrays;
 
-import static pl.pingvit.homework7.HarvestStatisticService.calculateHarvestStatistics;
-
 public class HarvestMain {
     public static void main(String[] args) {
         Harvest[] harvests = {
@@ -16,11 +14,13 @@ public class HarvestMain {
         System.out.println(Arrays.toString(harvests));
 
 
-        HarvestStatistic[] statistics = calculateHarvestStatistics(harvests);
+        HarvestStatistic[] statistics = HarvestStatisticService.calculateHarvestStatistics(harvests);
 
         for (HarvestStatistic statistic : statistics) {
             System.out.println("Растение: " + statistic.getPlant() + ", Общий вес урожая: " + statistic.getTotalWeight());
         }//не могу понять почему выдает результат только для пшеницы и дважды,нужна наводка
+        //починил ,теперь выдает  для разных культур ,но результат тот, что считает первым
+
     }
 }
 

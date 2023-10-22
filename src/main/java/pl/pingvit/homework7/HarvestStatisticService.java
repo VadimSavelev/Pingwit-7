@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 
 public class HarvestStatisticService {
-    public static HarvestStatistic[] calculateHarvestStatistics(Harvest[] harvests) {  // в этом методе не нужен модификатор static,
-        // пока что плиз давай делать все методы не статик
+    public static HarvestStatistic[] calculateHarvestStatistics(Harvest[] harvests) {
+
         Arrays.sort(harvests, (h1, h2) -> h1.getPlant().compareTo(h2.getPlant()));
 
         int uniquePlants = 1;
