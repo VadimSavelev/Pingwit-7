@@ -13,7 +13,7 @@ public class Hamster extends Pet {
     public int getAge() {
         return age;
     }
-    public void PrintInfoAboutCat() {
+    public void PrintInfoAboutCat() {  // методы нужно именовать с маленькой буквы. и лучше переименовать, тк класс хомяк печатает информацию о коте
         System.out.printf("This is hamster have cheek volume = %s,age= %s", cheekVolume, age);
     }
 }

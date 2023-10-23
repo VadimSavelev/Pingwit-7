@@ -13,7 +13,7 @@ public class Parrot extends Pet {
     public Double getWingLength() {
         return wingLength;
     }
-    public void PrintInfoAboutParrot() {
+    public void PrintInfoAboutParrot() {  // методы нужно именовать с маленькой буквы
         System.out.printf("This is parrot is color - %s,is fly %s", color, wingLength);
     }
 }

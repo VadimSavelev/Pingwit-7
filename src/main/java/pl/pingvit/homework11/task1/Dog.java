@@ -13,7 +13,7 @@ public class Dog extends Pet {
     public String isTongueColor() {
         return tongueColor;
     }
-    public void PrintInfoAboutDog() {
+    public void PrintInfoAboutDog() { // методы нужно именовать с маленькой буквы
         System.out.printf("This is dog have tail length = %s,nose is wet- %s", tailLength, tongueColor);
     }
 }
