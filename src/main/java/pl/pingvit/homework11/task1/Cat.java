@@ -14,7 +14,7 @@ public class Cat extends Pet {
     public BigDecimal getWeight() {
         return weight;
     }
-    public void PrintInfoAboutCat() {
+    public void printInfoAboutCat() {
         System.out.printf("This is cat breed - %s,weight= %s", breed, weight);
     }
 }

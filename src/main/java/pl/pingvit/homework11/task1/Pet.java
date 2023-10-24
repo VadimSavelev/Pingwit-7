@@ -1,15 +1,15 @@
 package pl.pingvit.homework11.task1;
 public class Pet {
-    private final String petName;  // мы находимся в классе Pet, поэтому префикс pet в имени поля не нужен.
+    private final String name;
     private final Long id;
     private final Owner owner;
-    public Pet(String petName, Long id, Owner owner) {
-        this.petName = petName;
+    public Pet(String name, Long id, Owner owner) {
+        this.name = name;
         this.id = id;
         this.owner = owner;
     }
-    public String getPetName() {
-        return petName;
+    public String getName() {
+        return name;
     }
     public Long getId() {
         return id;
@@ -17,9 +17,9 @@ public class Pet {
     public Owner getOwner() {
         return owner;
     }
-    public final String AllInformationAboutPet() { // методы нужно именовать с маленькой буквы
+    public final String allInformationAboutPet() {
         return String.format("Pet %s is %s %s.Info about owner: %s,%s",
-                petName,
+                name,
                 owner.name(),
                 owner.surname(),
                 owner.phoneNumber(),
@@ -28,7 +28,7 @@ public class Pet {
     @Override
     public String toString() {
         return "Pet{" +
-                "petMame='" + petName + '\'' +
+                "petMame='" + name + '\'' +
                 ", id=" + id +
                 ", owner=" + owner +
                 '}';
