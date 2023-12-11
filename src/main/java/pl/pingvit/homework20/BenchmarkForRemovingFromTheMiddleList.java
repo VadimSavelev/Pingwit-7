@@ -6,29 +6,27 @@ public class BenchmarkForRemovingFromTheMiddleList {
     public static void main(String[] args) {
         int size = 100000;
         List<Integer> arrayList = new ArrayList<>();
-        creatAList(arrayList, size);
+        creatList(arrayList, size);
         long startTime = System.currentTimeMillis();
-        deleteInMiddle(arrayList);
+        deleteFromMiddle(arrayList);
         long endTime = System.currentTimeMillis();
         System.out.println("ArrayList - Remove in Middle: " + (endTime - startTime) + " milliseconds");
 
         List<Integer> linkedList = new LinkedList<>();
-        creatAList(linkedList, size);
+        creatList(linkedList, size);
         startTime = System.currentTimeMillis();
-        deleteInMiddle(linkedList);
+        deleteFromMiddle(linkedList);
         endTime = System.currentTimeMillis();
         System.out.println("LinkedList - Remove in Middle: " + (endTime - startTime) + " milliseconds");
     }
 
-    // старайся именовать методы по правлам английского: createList
-    private static void creatAList(List<Integer> list, int size) {
+    private static void creatList(List<Integer> list, int size) {
         for (int i = 0; i <= size; i++) {
             list.add(i);
         }
     }
 
-    // старайся именовать методы по правлам английского: deleteFromBeginning
-    private static void deleteInMiddle(List<Integer> list) {
+    private static void deleteFromMiddle(List<Integer> list) {
         for (int i = list.size() / 2; i <= list.size(); i++)
             list.remove(i);
     }
