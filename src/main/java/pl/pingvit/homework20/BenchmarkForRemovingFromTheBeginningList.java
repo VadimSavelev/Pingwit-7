@@ -21,11 +21,15 @@ public class BenchmarkForRemovingFromTheBeginningList {
         endTime = System.currentTimeMillis();
         System.out.println("LinkedList - Remove in Beginner: " + (endTime - startTime) + " milliseconds");
     }
+
+    // старайся именовать методы по правлам английского: createList
     private static void creatAList(List<Integer> list, int size) {
         for (int i = 0; i <= size; i++) {
             list.add(i);
         }
     }
+
+    // старайся именовать методы по правлам английского: deleteFromBeginning
     private static void deleteInBeginner(List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             list.remove(i);

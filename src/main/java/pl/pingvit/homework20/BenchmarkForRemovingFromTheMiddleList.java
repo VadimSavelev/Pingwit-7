@@ -19,11 +19,15 @@ public class BenchmarkForRemovingFromTheMiddleList {
         endTime = System.currentTimeMillis();
         System.out.println("LinkedList - Remove in Middle: " + (endTime - startTime) + " milliseconds");
     }
+
+    // старайся именовать методы по правлам английского: createList
     private static void creatAList(List<Integer> list, int size) {
         for (int i = 0; i <= size; i++) {
             list.add(i);
         }
     }
+
+    // старайся именовать методы по правлам английского: deleteFromBeginning
     private static void deleteInMiddle(List<Integer> list) {
         for (int i = list.size() / 2; i <= list.size(); i++)
             list.remove(i);
