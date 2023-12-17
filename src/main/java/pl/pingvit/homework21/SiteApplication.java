@@ -27,21 +27,21 @@ public class SiteApplication {
         Map<String, Integer> visitsByUser =calculatingUserVisits(siteVisitList);
         System.out.println(visitsByUser);
     }
-    public static Set<String> extractUniqueUserName(List<SiteVisit> siteVisits){
+    public static Set<String> extractUniqueUserName(List<SiteVisit> siteVisits){ // метод собирает множество элементов, поэтому в имени более подходящим будет extractUniqueUserNames, множественное число
         SortedSet<String> userNames = new TreeSet<>();
         for (SiteVisit siteVisit: siteVisits){
             userNames.add(siteVisit.getUserName());
         }
         return userNames;
     }
-    public static Set<String> extractUniqueSite(List<SiteVisit> siteVisits){
+    public static Set<String> extractUniqueSite(List<SiteVisit> siteVisits){// метод собирает множество элементов, поэтому в имени более подходящим будет extractUniqueSites, множественное число
         SortedSet<String> siteName = new TreeSet<>();
         for (SiteVisit siteVisit: siteVisits){
             siteName.add(siteVisit.getNameOfTheSiteVisited());
         }
         return siteName;
     }
-public static Map<String, Integer> calculatingSiteVisits(List<SiteVisit> siteVisits){
+public static Map<String, Integer> calculatingSiteVisits(List<SiteVisit> siteVisits){ // calculating - это скорее деепричастие в английском, а в именах метода лучше использовать инфинитив: calculateSiteVisits
     SortedMap<String, Integer> visitBySite =new TreeMap<>();
     for (SiteVisit siteVisit : siteVisits) {
         String site = siteVisit.getNameOfTheSiteVisited();
@@ -54,7 +54,7 @@ public static Map<String, Integer> calculatingSiteVisits(List<SiteVisit> siteVis
     }
 return visitBySite;
 }
-    public static Map<String, Integer>calculatingUserVisits (List<SiteVisit> userNames) {
+    public static Map<String, Integer>calculatingUserVisits (List<SiteVisit> userNames) {// calculating - это скорее деепричастие в английском, а в именах метода лучше использовать инфинитив: calculateUserVisits
         SortedMap<String, Integer> visitsByUsers = new TreeMap<>();
         for ( SiteVisit siteVisit :userNames) {
             String name = siteVisit.getUserName();

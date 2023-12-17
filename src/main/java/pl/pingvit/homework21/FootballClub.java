@@ -1,7 +1,7 @@
 package pl.pingvit.homework21;
 import java.util.Objects;
 public class FootballClub {
-    public String ClubName;
+    public String ClubName; // поля принято именовать с маленькой буквы, поправь плиз
     public String country;
     public String city;
     public FootballClub(String clubName, String country, String city) {

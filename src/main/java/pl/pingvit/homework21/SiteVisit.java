@@ -2,7 +2,7 @@ package pl.pingvit.homework21;
 import java.util.Objects;
 public class SiteVisit {
     String userName;
-    String nameOfTheSiteVisited;
+    String nameOfTheSiteVisited; // поля можно называть покороче, здесь было бы достаточно site или visitedSite
     public SiteVisit(String userName, String nameOfTheSiteVisited) {
         this.userName = userName;
         this.nameOfTheSiteVisited = nameOfTheSiteVisited;
