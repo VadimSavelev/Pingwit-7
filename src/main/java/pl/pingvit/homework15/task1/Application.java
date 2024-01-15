@@ -44,7 +44,7 @@ public class Application {
         String[] dates ={dateOneFormatted1,dateOneFormatted2,dateOneFormatted3,dateOneFormatted4,dateTwoFormatted1,dateTwoFormatted2,dateTwoFormatted3,dateTwoFormatted4,dateThreeFormatted1,dateThreeFormatted2,dateThreeFormatted3,dateThreeFormatted4};
         for (String stringDates : dates) {
             System.out.println(stringDates);
-
+            // создание объекта newPattern лучше разместиить перед циклом. он одинаковый для всех итераций, и создавая его в цикле, мы занимаем лишнюю память.
             DateTimeFormatter newPattern = DateTimeFormatter.ofPattern("HH/mm/a/EEEE : yyyy-dd-MMMM-G").localizedBy(Locale.ENGLISH);
             LocalDateTime localDateTime = LocalDateTime.now();
             System.out.println(newPattern.format(localDateTime));

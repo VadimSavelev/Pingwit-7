@@ -21,6 +21,7 @@ public class Application {
 
         System.out.println("-----------------");
 
+        // здесь не имеет смысла создавать второй объект PersonParser, используй уже готовый из строки 16
         PersonParser personParser1 = new PersonParser();
         Person[] persons1 = personParser1.parse(text2);
         for (Person person1 : persons1) {
